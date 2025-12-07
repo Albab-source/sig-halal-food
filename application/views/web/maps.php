@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="<?=base_url()?>assets/web/img/food-icon.png" rel="icon">
+    <link href="<?=base_url()?>assets/web/img/icon.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
