@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ChariTeam - Free Nonprofit Website Template</title>
+    <title>HalalFoodPoint</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -43,8 +43,8 @@
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                <small class="ms-4"><i class="fa fa-envelope me-2"></i>info@example.com</small>
+                <small><i class="fa fa-map-marker-alt me-2"></i>Serpong, Tangsel, Banten</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>foodPoint@example.com</small>
             </div>
             <div class="col-lg-6 px-5 text-end">
                 <small>Follow us:</small>
@@ -57,22 +57,21 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="fw-bold text-primary m-0">Sepong<span class="text-white">Food</span></h1>
+                <h1 class="fw-bold text-primary m-0">Halal<span class="text-white">FoodPoint</span></h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="<?=base_url()?>" class="nav-item nav-link active">Home</a>
-                    <a href="#about" class="nav-item nav-link active">About</a>
-                    <a href="<?=base_url()?>web/restaurant" class="nav-item nav-link">Restoran</a>
+                    <a href="<?=base_url()?>" class="nav-item nav-link">Home</a>
+                    <a href="<?=base_url()?>web/about" class="nav-item nav-link ">About</a>
+                    <a href="<?=base_url()?>web/restaurant" class="nav-item nav-link active">Restoran</a>
                     <a href="<?=base_url()?>web/maps" class="nav-item nav-link">Maps</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
                     <a class="btn btn-outline-primary py-2 px-3" href="">
-                        Donate Now
+                        Eat Now
                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                             <i class="fa fa-arrow-right"></i>
                         </div>
@@ -119,7 +118,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h1 class="fw-bold text-primary mb-4">Chari<span class="text-white">Team</span></h1>
+                    <h1 class="fw-bold text-primary mb-4">Halal</br><span class="text-white">FoodPoint</span></h1>
                     <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
@@ -130,9 +129,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Address</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Serpong, Tangsel, Banten</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-envelope me-3"></i>foodPoint@example.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Quick Links</h5>
@@ -182,7 +181,6 @@
     <script src="<?=base_url()?>assets/web/lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="<?=base_url()?>assets/web/lib/parallax/parallax.min.js"></script>
 
-    <!-- Template Javascript -->
     <script src="<?=base_url()?>assets/web/js/main.js"></script>
     <script>
         $(document).ready(function(){
