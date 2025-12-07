@@ -82,8 +82,8 @@
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                <small class="ms-4"><i class="fa fa-envelope me-2"></i>info@example.com</small>
+                <small><i class="fa fa-map-marker-alt me-2"></i>Serpong, Tangsel, Banten</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>foodPoint@example.com</small>
             </div>
             <div class="col-lg-6 px-5 text-end">
                 <small>Follow us:</small>
@@ -104,14 +104,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="<?=base_url()?>" class="nav-item nav-link active">Home</a>
-                    <a href="<?=base_url()?>web/about" class="nav-item nav-link active">About</a>
+                    <a href="<?=base_url()?>web/about" class="nav-item nav-link">About</a>
                     <a href="<?=base_url()?>web/restaurant" class="nav-item nav-link">Restoran</a>
                     <a href="<?=base_url()?>web/maps" class="nav-item nav-link">Maps</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
                     <a class="btn btn-outline-primary py-2 px-3" href="">
-                        Donate Now
+                        Eat Now
                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                             <i class="fa fa-arrow-right"></i>
                         </div>
@@ -127,7 +126,7 @@
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="<?=base_url()?>assets/web/img/carousel-1.jpg" alt="Image">
+                    <img class="w-100" src="<?=base_url()?>assets/web/img/banner1.jpeg" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
@@ -146,7 +145,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="<?=base_url()?>assets/web/img/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="<?=base_url()?>assets/web/img/banner2.jpeg" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
@@ -199,15 +198,9 @@
                             <span class="text-primary">Daffa Ulhaq, Founder</span>
                         </div>
                         <p class="mb-5">Halal Food Finder provides easy-to-access halal restaurant locations based on reliable geographic information. With updated data and intuitive features, we support your journey in fulfilling halal lifestyle needs</p>
-                        <a class="btn btn-primary py-2 px-3 me-3" href="">
+                        <a class="btn btn-primary py-2 px-3 me-3" href="<?=base_url()?>web/about">
                             Learn More
                             <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a>
-                        <a class="btn btn-outline-primary py-2 px-3" href="">
-                            Contact Us
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
                         </a>
@@ -226,113 +219,23 @@
                 <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">List of Restaurants</div>
                 <h1 class="display-6 mb-5">Everyone Deserves Best Foods To Eat</h1>
             </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
-                        <div class="text-center p-4 pt-0">
-                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
-                                <small>Education</small>
-                            </div>
-                            <h5 class="mb-3">Sultan Masakan Timur Tengah</h5>
-                            <p>Ruko Versailles Blok FA No 8 BSD City, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310</p>
-                            <div class="causes-progress bg-light p-3 pt-2">
-                                <div class="d-flex justify-content-between">
-                                    <p class="text-dark">$10,000 <small class="text-body">Goal</small></p>
-                                    <p class="text-dark">$9,542 <small class="text-body">Raised</small></p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
-                                        <span>4.6</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="position-relative mt-auto" style="height: 250px; overflow: hidden;">
-                            <img class="img-fluid" src="<?=base_url()?>assets/web/img/sultan.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-                            <div class="causes-overlay">
-                                <a class="btn btn-outline-primary" href="">
-                                    Read More
-                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                        <i class="fa fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+            <div class="row g-4 justify-content-center" id="restaurant-list">
+                <!-- Restaurant list will loaded here -->
+            </div>
+            <div class="text-center mt-4 wow fadeInUp" data-wow-delay="0.1s">
+                <a class="btn btn-primary py-2 px-3 me-3" href="<?=base_url()?>web/restaurant">
+                    Find More
+                    <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                        <i class="fa fa-arrow-right"></i>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
-                        <div class="text-center p-4 pt-0">
-                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
-                                <small>Pure Water</small>
-                            </div>
-                            <h5 class="mb-3">Kampung Kecil BSD</h5>
-                            <p>Jl. Kencana Loka Sektor XII.2, Jl. Artowijoyo No.40, Lengkong Wetan, Kec. Serpong, Kota Tangerang Selatan, Banten </p>
-                            <div class="causes-progress bg-light p-3 pt-2">
-                                <div class="d-flex justify-content-between">
-                                    <p class="text-dark">$10,000 <small class="text-body">Goal</small></p>
-                                    <p class="text-dark">$9,542 <small class="text-body">Raised</small></p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100">
-                                        <span>4.7</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="position-relative mt-auto" style="height: 250px; overflow: hidden;">
-                            <img class="img-fluid" src="<?=base_url()?>assets/web/img/kecil.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-                            <div class="causes-overlay">
-                                <a class="btn btn-outline-primary" href="">
-                                    Read More
-                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                        <i class="fa fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
-                        <div class="text-center p-4 pt-0">
-                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
-                                <small>Healthy Life</small>
-                            </div>
-                            <h5 class="mb-3">Kuilo Coffee and Kitchen </h5>
-                            <p>Jl. Masjid Ciater No.16 A, Ciater, Kec. Serpong, Kota Tangerang Selatan, Banten 15310</p>
-                            <div class="causes-progress bg-light p-3 pt-2">
-                                <div class="d-flex justify-content-between">
-                                    <p class="text-dark">$10,000 <small class="text-body">Goal</small></p>
-                                    <p class="text-dark">$9,542 <small class="text-body">Raised</small></p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100">
-                                        <span>4.7</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="position-relative mt-auto" style="height: 250px; overflow: hidden;">
-                            <img class="img-fluid" src="<?=base_url()?>assets/web/img/kuilo.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-                            <div class="causes-overlay">
-                                <a class="btn btn-outline-primary" href="">
-                                    Read More
-                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                        <i class="fa fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
     <!-- Restaurant End -->
 
     <!-- Preview Start -->
-    <div class="container-fluid donate my-5 py-5" data-parallax="scroll" data-image-src="<?=base_url()?>assets/web/img/carousel-2.jpg">
+    <div class="container-fluid donate my-5 py-5" data-parallax="scroll" data-image-src="<?=base_url()?>assets/web/img/preview-bg.jpeg">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <!-- Statistics Section Start -->
@@ -392,91 +295,13 @@
                 <!-- Statistics Section End -->
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="">
-                        <iframe src="<?=base_url()?>/home" width="100%" height="900" style="border: none; min-height: 600px; max-height: 90vh; border-radius: 8px;"></iframe>
+                        <iframe src="<?=base_url()?>web/maps_preview" width="100%" height="950" style="border: none; min-height: 600px; max-height: 95vh; border-radius: 8px;"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Preview End -->
-
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Team Members</div>
-                <h1 class="display-6 mb-5">Let's Meet With Our Ordinary Soldiers</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="<?=base_url()?>assets/web/img/team-1.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <p class="text-primary">Designation</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="<?=base_url()?>assets/web/img/team-2.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <p class="text-primary">Designation</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="<?=base_url()?>assets/web/img/team-3.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <p class="text-primary">Designation</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="<?=base_url()?>assets/web/img/team-4.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <p class="text-primary">Designation</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
@@ -532,9 +357,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Address</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Serpong, Tangsel, Banten</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-envelope me-3"></i>foodPoint@example.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Quick Links</h5>
@@ -587,7 +412,89 @@
     <!-- Template Javascript -->
     <script src="<?=base_url()?>assets/web/js/main.js"></script>
 
-        <!-- Statistics Counter Animation -->
+    <!-- Resto list preview -->
+     <script>
+        $(document).ready(function(){
+            $.getJSON("<?=base_url()?>assets/maps/resto_list/resto_points.geojson", function(data) {
+                var container = $('#restaurant-list');
+                var delay = 0.1;
+
+                var limitedFeatures = data.features.slice(0, 3);
+
+                // Loop every features in the geojson
+                limitedFeatures.forEach(function(feature, index){
+                    var props = feature.properties;
+                    var rating = props.rating || 'N/A';
+                    //clean rating format
+                    if (rating !== 'N/A' && typeof rating === 'string') {
+                        rating = rating.replace(',', '.');
+                    }
+
+                    //Count rating's progress bar
+                    var ratingNum = parseFloat(rating) || 0;
+                    var progressPercent = (ratingNum / 5.0) * 100;
+
+                    //Format picture file's name (suitable used one in map)
+                    var imageName = props.name.replace(/\s+/g, '_');
+                    var imagePath = "<?=base_url()?>assets/images/restaurant/"+imageName+".jpg";
+                    var fallbackImage = "<?=base_url()?>assets/web/img/food-icon.png";
+
+                    //Create card HTML
+                    var cardHtml = `
+                        <div class="col-lg-4 col-md-6 mb-5 wow fadeInUp" data-wow-delay="${delay}s">
+                            <div class="causes-item d-flex flex-column bg-light border-top border-5 border-primary rounded-top overflow-hidden h-100">
+                                <div class="text-center p-4 pt-0">
+                                    <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
+                                        <small>⭐ ${rating}</small>
+                                    </div>
+                                    <h5 class="mb-3">${props.name || 'Restoran'}</h5>
+                                    <p class="mb-2" style="font-size: 0.9rem; color: #666;">${props.address || 'Alamat tidak tersedia'}</p>
+                                    <div class="causes-progress bg-white p-3 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="text-dark"><i class="fa fa-phone me-1"></i> <small class="text-body">${props.phone || 'Tidak tersedia'}</small></p>
+                                            <p class="text-dark"><i class="fa fa-star me-1"></i> <small class="text-body">Rating</small></p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: ${progressPercent}%" aria-valuenow="${ratingNum}" aria-valuemin="0" aria-valuemax="5">
+                                                <span>${rating}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative mt-auto" style="height: 250px; overflow: hidden;">
+                                    <img class="img-fluid" src="${imagePath}" alt="${props.name}" 
+                                        style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                                        onerror="this.src='${fallbackImage}'">
+                                    <div class="causes-overlay">
+                                        <a class="btn btn-outline-primary" href="tel:${props.phone || ''}">
+                                            Hubungi
+                                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+
+                    //add card HTML to container
+                    container.append(cardHtml);
+
+                    //increment delay for animation
+                    delay += 0.1;
+                });
+                if (typeof WOW !== 'undefined') {
+                    new WOW().init();
+                }
+            }).fail(function(jqxhr, textStatus, error) {
+                console.error("(ERROR) Failed loading restaurant data: ", textStatus, error);
+                $('#restaurant-list').html('<div class="col-12 text-center"><p class="text-danger">Gagal memuat data restoran. Silakan refresh halaman.</p></div>');
+            });
+        });
+    </script>
+
+    <!-- Statistics Counter Animation -->
     <script>
         (function() {
             function animateCounter(element) {

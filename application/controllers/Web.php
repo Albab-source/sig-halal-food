@@ -34,8 +34,8 @@ class Web extends CI_Controller {
 	{
 		$this->load->view('web/maps');
 	}
-	public function mapPreview()
+	public function maps_preview()
 	{
-		$this->load->view('web/mapPrev');
+		$this->load->view('maps_preview');
 	}
 }

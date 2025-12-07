@@ -43,8 +43,8 @@
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                <small class="ms-4"><i class="fa fa-envelope me-2"></i>info@example.com</small>
+                <small><i class="fa fa-map-marker-alt me-2"></i>Serpong, Tangsel, Banten</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>foodPoint@example.com</small>
             </div>
             <div class="col-lg-6 px-5 text-end">
                 <small>Follow us:</small>
@@ -64,15 +64,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="<?=base_url()?>" class="nav-item nav-link active">Home</a>
+                    <a href="<?=base_url()?>" class="nav-item nav-link">Home</a>
                     <a href="<?=base_url()?>web/about" class="nav-item nav-link active">About</a>
                     <a href="<?=base_url()?>web/restaurant" class="nav-item nav-link">Restoran</a>
                     <a href="<?=base_url()?>web/maps" class="nav-item nav-link">Maps</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
                     <a class="btn btn-outline-primary py-2 px-3" href="">
-                        Donate Now
+                        Eat Now
                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                             <i class="fa fa-arrow-right"></i>
                         </div>
@@ -117,17 +116,17 @@
                         </div>
                         <p class="mb-5">Halal Food Finder provides easy-to-access halal restaurant locations based on reliable geographic information. With updated data and intuitive features, we support your journey in fulfilling halal lifestyle needs</p>
                         <a class="btn btn-primary py-2 px-3 me-3" href="">
-                            Learn More
+                            Contact Us
                             <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
                         </a>
-                        <a class="btn btn-outline-primary py-2 px-3" href="">
+                        <!-- <a class="btn btn-outline-primary py-2 px-3" href="">
                             Contact Us
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -145,8 +144,8 @@
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden" style="height: 300px;">
-                            <img class="img-fluid" src="<?=base_url()?>assets/web/img/team-1.jpg" alt="">
+                        <div class="overflow-hidden" style="height: 275px;">
+                            <img class="img-fluid" src="<?=base_url()?>assets/web/img/albab.jpg" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5>Muhammad Ulil Albab</h5>
@@ -161,7 +160,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden" style="height: 300px;">
+                        <div class="overflow-hidden" style="height: 275px;">
                             <img class="img-fluid" src="<?=base_url()?>assets/web/img/amel.jpg" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
@@ -177,7 +176,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden" style="height: 300px">
+                        <div class="overflow-hidden" style="height: 275px">
                             <img class="img-fluid" src="<?=base_url()?>assets/web/img/nida.jpg" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
@@ -193,12 +192,12 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden" style="height: 300px; overflow: hidden;">
+                        <div class="overflow-hidden" style="height: 275px; overflow: hidden;">
                             <img class="img-fluid" src="<?=base_url()?>assets/web/img/yudha.jpg" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5>Fajar Yudha Baskara</h5>
-                            <p class="text-primary">112209300000</p>
+                            <p class="text-primary">11220930000116</p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -209,8 +208,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="<?=base_url()?>assets/web/img/team-4.jpg" alt="">
+                        <div class="overflow-hidden" style="height: 275px;">
+                            <img class="img-fluid" src="<?=base_url()?>assets/web/img/daffa.jpg" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5>Daffa Ul Haq Mozaffar Ahmad</h5>
@@ -244,9 +243,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Address</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Serpong, Tangsel, Banten</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-envelope me-3"></i>foodPoint@example.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Quick Links</h5>

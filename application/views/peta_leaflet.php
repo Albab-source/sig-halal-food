@@ -20,10 +20,7 @@
 </style>
 <div id="map" style="width: 100%; height: 100%; color:black;"></div>   
 <script>  
-    var prov = new L.LayerGroup();
-    var faskes = new L.LayerGroup();
-    var sungai = new L.LayerGroup();
-    var provin = new L.LayerGroup();
+    var restoPoint = new L.LayerGroup();
     var serpong = new L.LayerGroup();
     var serpongRoad = new L.LayerGroup();
 
@@ -66,14 +63,10 @@
     }; 
 
     var groupedOverlays = {
-        "Peta Dasar":{
-            'Ibu Kota Provinsi' :prov,
-            'Provinsi' :provin,
-            'Jaringan Sungai' :sungai
-        },
         "Peta Khusus":{
-            'Fasilitas Kesehatan' :faskes,
-            'Serpong Maps' :serpong
+            'Serpong Maps' :serpong,
+            'Serpong Road' :serpongRoad,
+            'Restoran Halal' :restoPoint
         }
     };
 
@@ -295,7 +288,7 @@
     $.getJSON("<?=base_url()?>assets/maps/resto_list/resto_points.geojson",function(data){
         var ratIcon = L.icon({
             iconUrl: '<?=base_url()?>assets/images/Marker-1.png',
-            iconSize: [12,10]
+            iconSize: [25,35]
         });
         L.geoJson(data,{
             pointToLayer: function(feature,latlng){
@@ -340,6 +333,6 @@
             marker.bindPopup(popupContent);
             return marker;
             }
-        }).addTo(serpong);
+        }).addTo(restoPoint);
     });
 </script>

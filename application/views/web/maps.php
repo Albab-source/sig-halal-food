@@ -43,8 +43,8 @@
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                <small class="ms-4"><i class="fa fa-envelope me-2"></i>info@example.com</small>
+                <small><i class="fa fa-map-marker-alt me-2"></i>Serpong, Tangsel, Banten</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>foodPoint@example.com</small>
             </div>
             <div class="col-lg-6 px-5 text-end">
                 <small>Follow us:</small>
@@ -64,15 +64,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="<?=base_url()?>" class="nav-item nav-link active">Home</a>
-                    <a href="<?=base_url()?>web/about" class="nav-item nav-link active">About</a>
+                    <a href="<?=base_url()?>" class="nav-item nav-link">Home</a>
+                    <a href="<?=base_url()?>web/about" class="nav-item nav-link ">About</a>
                     <a href="<?=base_url()?>web/restaurant" class="nav-item nav-link">Restoran</a>
-                    <a href="<?=base_url()?>web/maps" class="nav-item nav-link">Maps</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="<?=base_url()?>web/maps" class="nav-item nav-link active">Maps</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
                     <a class="btn btn-outline-primary py-2 px-3" href="">
-                        Donate Now
+                        Eat Now
                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                             <i class="fa fa-arrow-right"></i>
                         </div>
@@ -123,9 +122,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Address</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Serpong, Tangsel, Banten</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-envelope me-3"></i>foodPoint@example.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Quick Links</h5>
