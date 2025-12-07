@@ -22,6 +22,10 @@ class Web extends CI_Controller {
 	{
 		$this->load->view('web/home');
 	}
+	public function about()
+	{
+		$this->load->view('web/about');
+	}
 	public function restaurant()
 	{
 		$this->load->view('web/restaurant');
