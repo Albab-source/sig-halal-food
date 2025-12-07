@@ -20,6 +20,10 @@
 </style>
 <div id="map" style="width: 100%; height: 100%; color:black;"></div>   
 <script>  
+    var prov = new L.LayerGroup();
+    var faskes = new L.LayerGroup();
+    var sungai = new L.LayerGroup();
+    var provin = new L.LayerGroup();
     var serpong = new L.LayerGroup();
     var serpongRoad = new L.LayerGroup();
 
@@ -62,7 +66,13 @@
     }; 
 
     var groupedOverlays = {
+        "Peta Dasar":{
+            'Ibu Kota Provinsi' :prov,
+            'Provinsi' :provin,
+            'Jaringan Sungai' :sungai
+        },
         "Peta Khusus":{
+            'Fasilitas Kesehatan' :faskes,
             'Serpong Maps' :serpong
         }
     };
@@ -130,6 +140,115 @@
         return div; 
     };  
     north.addTo(map);
+
+    $.getJSON("<?=base_url()?>assets/provinsi.geojson",function(data){
+        var ratIcon = L.icon({
+            iconUrl: '<?=base_url()?>assets/images/Marker-1.png',
+            iconSize: [12,10]
+        });
+        L.geoJson(data,{
+            pointToLayer: function(feature,latlng){
+                var marker = L.marker(latlng,{icon: ratIcon});
+                marker.bindPopup(feature.properties.CITY_NAME);
+                return marker;
+            }
+        }).addTo(prov);
+    });
+
+    $.getJSON("<?=base_url()?>assets/rsu.geojson",function(data){
+        var ratIcon = L.icon({
+                iconUrl: '<?=base_url()?>assets/images/Marker-1.png',
+                iconSize: [12,10]
+            });
+            L.geoJson(data,{
+                pointToLayer: function(feature,latlng){
+                var marker = L.marker(latlng,{icon: ratIcon});
+                marker.bindPopup(feature.properties.NAMOBJ);
+                return marker;
+            }
+        }).addTo(faskes);
+    });
+
+    $.getJSON("<?=base_url()?>assets/poliklinik.geojson",function(data){
+        var ratIcon = L.icon({
+            iconUrl: '<?=base_url()?>assets/images/Marker-1.png',
+            iconSize: [12,10]
+            });
+        L.geoJson(data,{
+            pointToLayer: function(feature,latlng){
+            var marker = L.marker(latlng,{icon: ratIcon});
+            marker.bindPopup(feature.properties.NAMOBJ);
+            return marker;
+            }
+        }).addTo(faskes);
+    });
+
+    $.getJSON("<?=base_url()?>assets/puskesmas.geojson",function(data){
+        var ratIcon = L.icon({
+            iconUrl: '<?=base_url()?>assets/images/Marker-1.png',
+            iconSize: [12,10]
+        });
+        L.geoJson(data,{
+            pointToLayer: function(feature,latlng){
+            var marker = L.marker(latlng,{icon: ratIcon});
+            marker.bindPopup(feature.properties.NAMOBJ);
+            return marker;
+            }
+        }).addTo(faskes);
+    });
+
+    $.getJSON("<?=base_url()?>/assets/sungai.geojson",function(kode){
+        L.geoJson( kode, {
+            style: function(feature){
+                var color,
+                kode = feature.properties.kode;
+                if ( kode < 2 ) color = "#f2051d";
+                else if ( kode > 0 ) color = "#f2051d";
+                else color = "#f2051d"; // no data
+                return { color: "#999", weight: 5, color: color, fillOpacity: .8 };
+            },
+            onEachFeature: function( feature, layer ){
+                layer.bindPopup
+                ()
+            } 
+        }).addTo(sungai);
+    });
+
+    $.getJSON("<?=base_url()?>/assets/provinsi_poligon.geojson",function(kode){
+        L.geoJson( kode, {
+            style: function(feature){
+                var fillColor,
+                kode = feature.properties.kode;
+                if ( kode > 21 ) fillColor = "#006837";
+                else if (kode>20) fillColor="#fec44f"
+                else if (kode>19) fillColor="#c2e699"
+                else if (kode>18) fillColor="#fee0d2"
+                else if (kode>17) fillColor="#756bb1"
+                else if (kode>16) fillColor="#8c510a"
+                else if (kode>15) fillColor="#01665e"
+                else if (kode>14) fillColor="#e41a1c"
+                else if (kode>13) fillColor="#636363"
+                else if (kode>12) fillColor= "#762a83"
+                else if (kode>11) fillColor="#1b7837"
+                else if (kode>10) fillColor="#d53e4f"
+                else if (kode>9) fillColor="#67001f"
+                else if (kode>8) fillColor="#c994c7"
+                else if (kode>7) fillColor="#fdbb84"
+                else if (kode>6) fillColor="#dd1c77"
+                else if (kode>5) fillColor="#3182bd"
+                else if ( kode > 4 ) fillColor ="#f03b20"
+                else if ( kode > 3 ) fillColor = "#31a354";
+                else if ( kode > 2 ) fillColor = "#78c679";
+                else if ( kode > 1 ) fillColor = "#c2e699";
+                else if ( kode > 0 ) fillColor = "#ffffcc";
+                else fillColor = "#f7f7f7"; // no data
+                return { color: "#999", weight: 1, fillColor: fillColor, fillOpacity: .6 };
+            },
+            onEachFeature: function( feature, layer ){
+                
+            }
+        }).addTo(provin);
+    });
 
     // Serpong Maps
     $.getJSON("<?=base_url()?>/assets/maps/road_serpong.geojson",function(kode){

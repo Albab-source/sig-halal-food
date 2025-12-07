@@ -64,20 +64,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="#banner" class="nav-item nav-link active">Home</a>
+                    <a href="<?=base_url()?>" class="nav-item nav-link active">Home</a>
                     <a href="#about" class="nav-item nav-link active">About</a>
-                    <a href="#restaurant" class="nav-item nav-link">Restoran</a>
-                    <a href="#maps" class="nav-item nav-link">Maps</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="service.html" class="dropdown-item">Service</a>
-                            <a href="donate.html" class="dropdown-item">Donate</a>
-                            <a href="team.html" class="dropdown-item">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
-                        </div>
-                    </div>
+                    <a href="<?=base_url()?>web/restaurant" class="nav-item nav-link">Restoran</a>
+                    <a href="<?=base_url()?>web/maps" class="nav-item nav-link">Maps</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
@@ -507,7 +497,7 @@
 
 
     <!-- Testimonial Start -->
-<div class="container-xxl py-5">
+    <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Testimonial</div>
