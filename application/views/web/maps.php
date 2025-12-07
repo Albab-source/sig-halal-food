@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SepongFood</title>
+    <title>HalalFoodPoint</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -57,7 +57,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="fw-bold text-primary m-0">Sepong<span class="text-white">Food</span></h1>
+                <h1 class="fw-bold text-primary m-0">Halal<span class="text-white">FoodPoint</span></h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -65,7 +65,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="<?=base_url()?>" class="nav-item nav-link active">Home</a>
-                    <a href="#about" class="nav-item nav-link active">About</a>
+                    <a href="<?=base_url()?>web/about" class="nav-item nav-link active">About</a>
                     <a href="<?=base_url()?>web/restaurant" class="nav-item nav-link">Restoran</a>
                     <a href="<?=base_url()?>web/maps" class="nav-item nav-link">Maps</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -112,7 +112,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h1 class="fw-bold text-primary mb-4">Chari<span class="text-white">Team</span></h1>
+                    <h1 class="fw-bold text-primary mb-4">Halal</br><span class="text-white">FoodPoint</span></h1>
                     <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>

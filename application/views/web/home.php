@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SepongFood</title>
+    <title>HalalFoodPoint</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -29,6 +29,45 @@
 
     <!-- Template Stylesheet -->
     <link href="<?=base_url()?>assets/web/css/style.css" rel="stylesheet">
+
+        <!-- Custom Statistics Styles -->
+    <style>
+        .stat-card {
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+        }
+        
+        .stat-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover .stat-icon {
+            transform: scale(1.1);
+        }
+        
+        .stat-number {
+            line-height: 1.2;
+        }
+        
+        @media (max-width: 768px) {
+            .stat-card {
+                margin-bottom: 1rem;
+            }
+            
+            .stat-number {
+                font-size: 2rem !important;
+            }
+            
+            .stat-icon {
+                font-size: 2.5rem !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -57,7 +96,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="fw-bold text-primary m-0">Sepong<span class="text-white">Food</span></h1>
+                <h1 class="fw-bold text-primary m-0">Halal<span class="text-white">FoodPoint</span></h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -65,7 +104,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="<?=base_url()?>" class="nav-item nav-link active">Home</a>
-                    <a href="#about" class="nav-item nav-link active">About</a>
+                    <a href="<?=base_url()?>web/about" class="nav-item nav-link active">About</a>
                     <a href="<?=base_url()?>web/restaurant" class="nav-item nav-link">Restoran</a>
                     <a href="<?=base_url()?>web/maps" class="nav-item nav-link">Maps</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -81,9 +120,7 @@
             </div>
         </nav>
     </div>
-    <!-- Navbar End -->
-
-    
+    <!-- Navbar End -->    
     
     <!-- Banner Start -->
     <div id="banner" class="container-fluid p-0 mb-5">
@@ -97,12 +134,12 @@
                                 <div class="col-lg-7 pt-5">
                                     <h1 class="display-4 text-white mb-3 animated slideInDown">Let's Save our Tongue With Halal Foods</h1>
                                     <p class="fs-5 text-white-50 mb-5 animated slideInDown">Aliqu diam amet diam et eos. Clita erat ipsum et lorem sed stet lorem sit clita duo justo erat amet</p>
-                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="#important">
+                                    <!-- <a class="btn btn-primary py-2 px-3 animated slideInDown" href="#important">
                                         Find Out 
                                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
                         </div>
@@ -116,12 +153,12 @@
                                 <div class="col-lg-7 pt-5">
                                     <h1 class="display-4 text-white mb-3 animated slideInDown">Let's Save our Tongue With Halal Foods</h1>
                                     <p class="fs-5 text-white-50 mb-5 animated slideInDown">Aliqu diam amet diam et eos. Clita erat ipsum et lorem sed stet lorem sit clita duo justo erat amet</p>
-                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
+                                    <!-- <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
                                         Learn More
                                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
                         </div>
@@ -352,49 +389,64 @@
     <div class="container-fluid donate my-5 py-5" data-parallax="scroll" data-image-src="<?=base_url()?>assets/web/img/carousel-2.jpg">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
+                <!-- Statistics Section Start -->
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Donate Now</div>
-                    <h1 class="display-6 text-white mb-5">Thanks For The Results Achieved With You</h1>
-                    <p class="text-white-50 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="h-100 bg-white p-5">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-light border-0" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control bg-light border-0" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="btn-group d-flex justify-content-around">
-                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
-                                        <label class="btn btn-light py-3" for="btnradio1">$10</label>
-
-                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2">
-                                        <label class="btn btn-light py-3" for="btnradio2">$20</label>
-
-                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3">
-                                        <label class="btn btn-light py-3" for="btnradio3">$30</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary px-5" style="height: 60px;">
-                                        Donate Now
-                                        <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
-                                            <i class="fa fa-arrow-right"></i>
-                                        </div>
-                                    </button>
-                                </div>
+                    <div class="text-center mb-5">
+                        <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Statistik Data Restoran Halal</div>
+                        <h1 class="display-6 text-white mb-3">Halal FoodPoint</h1>
+                        <p class="text-white-50 mb-5" style="max-width: 600px; margin: 0 auto;">Informasi terpercaya dan terbaru untuk membantu Anda menemukan kuliner halal dengan mudah.</p>
+                    </div>
+                    
+                    <div class="row g-4 justify-content-center">
+                        <!-- Statistik 1: Restoran Terdaftar -->
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="stat-card bg-white rounded-4 p-4 text-center h-100 shadow-lg" style="border-top: 4px solid #1A8754; transition: transform 0.3s ease;">
+                                <div class="stat-icon mb-3" style="font-size: 3rem;">🍽️</div>
+                                <h3 class="stat-number mb-2" style="color: #1A8754; font-size: 2.5rem; font-weight: 700; font-family: 'Saira', sans-serif;">
+                                    <span class="counter" data-target="17">0</span>+
+                                </h3>
+                                <p class="stat-label mb-0" style="color: #333; font-size: 1rem; font-weight: 600;">Restoran Halal Terdaftar</p>
                             </div>
-                        </form>
+                        </div>
+                        
+                        <!-- Statistik 2: Rating Rata-rata -->
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="stat-card bg-white rounded-4 p-4 text-center h-100 shadow-lg" style="border-top: 4px solid #D4A017; transition: transform 0.3s ease;">
+                                <div class="stat-icon mb-3" style="font-size: 3rem;">⭐</div>
+                                <h3 class="stat-number mb-2" style="color: #D4A017; font-size: 2.5rem; font-weight: 700; font-family: 'Saira', sans-serif;">
+                                    <span class="counter" data-target="4.5" data-decimal="true">0</span>⭐
+                                </h3>
+                                <p class="stat-label mb-0" style="color: #333; font-size: 1rem; font-weight: 600;">Rating Rata-rata</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Statistik 3: Halal Verified -->
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="stat-card bg-white rounded-4 p-4 text-center h-100 shadow-lg" style="border-top: 4px solid #1A8754; transition: transform 0.3s ease;">
+                                <div class="stat-icon mb-3" style="font-size: 3rem;">🕌</div>
+                                <h3 class="stat-number mb-2" style="color: #1A8754; font-size: 2.5rem; font-weight: 700; font-family: 'Saira', sans-serif;">
+                                    <span class="counter" data-target="100">0</span>%
+                                </h3>
+                                <p class="stat-label mb-0" style="color: #333; font-size: 1rem; font-weight: 600;">Halal Verified</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Statistik 4: Data Terupdate -->
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="stat-card bg-white rounded-4 p-4 text-center h-100 shadow-lg" style="border-top: 4px solid #D4A017; transition: transform 0.3s ease;">
+                                <div class="stat-icon mb-3" style="font-size: 3rem;">📅</div>
+                                <h3 class="stat-number mb-2" style="color: #D4A017; font-size: 2.5rem; font-weight: 700; font-family: 'Saira', sans-serif;">
+                                    <span class="counter" data-target="2025">0</span>
+                                </h3>
+                                <p class="stat-label mb-0" style="color: #333; font-size: 1rem; font-weight: 600;">Data Terupdate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Statistics Section End -->
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="">
+                        <iframe src="<?=base_url()?>/home" width="100%" height="900" style="border: none; min-height: 600px; max-height: 90vh; border-radius: 8px;"></iframe>
                     </div>
                 </div>
             </div>
@@ -539,7 +591,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h1 class="fw-bold text-primary mb-4">Chari<span class="text-white">Team</span></h1>
+                    <h1 class="fw-bold text-primary mb-4">Halal</br><span class="text-white">FoodPoint</span></h1>
                     <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
@@ -604,6 +656,62 @@
 
     <!-- Template Javascript -->
     <script src="<?=base_url()?>assets/web/js/main.js"></script>
+
+        <!-- Statistics Counter Animation -->
+    <script>
+        (function() {
+            function animateCounter(element) {
+                const target = parseFloat(element.getAttribute('data-target'));
+                const hasDecimal = element.getAttribute('data-decimal') === 'true';
+                const duration = 2000; // 2 seconds
+                const increment = target / (duration / 16); // 60fps
+                let current = 0;
+                
+                const timer = setInterval(function() {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    
+                    if (hasDecimal) {
+                        element.textContent = current.toFixed(1);
+                    } else {
+                        element.textContent = Math.floor(current);
+                    }
+                }, 16);
+            }
+            
+            // Intersection Observer untuk trigger animasi saat scroll
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        const counters = entry.target.querySelectorAll('.counter');
+                        counters.forEach(function(counter) {
+                            if (!counter.classList.contains('animated')) {
+                                counter.classList.add('animated');
+                                animateCounter(counter);
+                            }
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe statistics section saat DOM ready
+            document.addEventListener('DOMContentLoaded', function() {
+                const statsSection = document.querySelector('.stat-card')?.closest('.col-12');
+                if (statsSection) {
+                    observer.observe(statsSection);
+                }
+            });
+        })();
+    </script>
 </body>
 
 </html>
