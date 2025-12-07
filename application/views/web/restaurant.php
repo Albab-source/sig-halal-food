@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="<?=base_url()?>assets/web/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +21,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="<?=base_url()?>assets/web/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="<?=base_url()?>assets/web/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=base_url()?>assets/web/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?=base_url()?>assets/web/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -57,26 +57,17 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="fw-bold text-primary m-0">Chari<span class="text-white">Team</span></h1>
+                <h1 class="fw-bold text-primary m-0">Sepong<span class="text-white">Food</span></h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="causes.html" class="nav-item nav-link active">Causes</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="service.html" class="dropdown-item">Service</a>
-                            <a href="donate.html" class="dropdown-item">Donate</a>
-                            <a href="team.html" class="dropdown-item">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
-                        </div>
-                    </div>
+                    <a href="<?=base_url()?>" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link active">About</a>
+                    <a href="<?=base_url()?>web/restaurant" class="nav-item nav-link">Restoran</a>
+                    <a href="<?=base_url()?>web/maps" class="nav-item nav-link">Maps</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
@@ -96,12 +87,11 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center">
-            <h1 class="display-4 text-white animated slideInDown mb-4">Causes</h1>
+            <h1 class="display-4 text-white animated slideInDown mb-4">Restaurant</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">Causes</li>
+                    <li class="breadcrumb-item"><a class="text-white" href="<?=base_url()?>">Home</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Restaurant</li>
                 </ol>
             </nav>
         </div>
@@ -109,117 +99,19 @@
     <!-- Page Header End -->
 
 
-    <!-- Causes Start -->
+    <!-- Restaurant Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Feature Causes</div>
-                <h1 class="display-6 mb-5">Every Child Deserves The Opportunity To Learn</h1>
+                <h1 class="display-6 mb-5">Find Your Favorite Restaurant!</h1>
             </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="causes-item d-flex flex-column bg-light border-top border-5 border-primary rounded-top overflow-hidden h-100">
-                        <div class="text-center p-4 pt-0">
-                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
-                                <small>Education</small>
-                            </div>
-                            <h5 class="mb-3">Education For African Children</h5>
-                            <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
-                            <div class="causes-progress bg-white p-3 pt-2">
-                                <div class="d-flex justify-content-between">
-                                    <p class="text-dark">$10,000 <small class="text-body">Goal</small></p>
-                                    <p class="text-dark">$9,542 <small class="text-body">Raised</small></p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                        <span>90%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="img/courses-1.jpg" alt="">
-                            <div class="causes-overlay">
-                                <a class="btn btn-outline-primary" href="">
-                                    Read More
-                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                        <i class="fa fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="causes-item d-flex flex-column bg-light border-top border-5 border-primary rounded-top overflow-hidden h-100">
-                        <div class="text-center p-4 pt-0">
-                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
-                                <small>Pure Water</small>
-                            </div>
-                            <h5 class="mb-3">Ensure Pure Drinking Water</h5>
-                            <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
-                            <div class="causes-progress bg-white p-3 pt-2">
-                                <div class="d-flex justify-content-between">
-                                    <p class="text-dark">$10,000 <small class="text-body">Goal</small></p>
-                                    <p class="text-dark">$9,542 <small class="text-body">Raised</small></p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                        <span>90%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="img/courses-2.jpg" alt="">
-                            <div class="causes-overlay">
-                                <a class="btn btn-outline-primary" href="">
-                                    Read More
-                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                        <i class="fa fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="causes-item d-flex flex-column bg-light border-top border-5 border-primary rounded-top overflow-hidden h-100">
-                        <div class="text-center p-4 pt-0">
-                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
-                                <small>Healthy Life</small>
-                            </div>
-                            <h5 class="mb-3">Ensure Medical Treatment</h5>
-                            <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
-                            <div class="causes-progress bg-white p-3 pt-2">
-                                <div class="d-flex justify-content-between">
-                                    <p class="text-dark">$10,000 <small class="text-body">Goal</small></p>
-                                    <p class="text-dark">$9,542 <small class="text-body">Raised</small></p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                        <span>90%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="img/courses-3.jpg" alt="">
-                            <div class="causes-overlay">
-                                <a class="btn btn-outline-primary" href="">
-                                    Read More
-                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                        <i class="fa fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row g-5 justify-content-center" id="restaurant-list">
+                <!-- cards will be loaded here -->
             </div>
         </div>
     </div>
-    <!-- Causes End -->
+    <!-- Restaurant End -->
         
 
     <!-- Footer Start -->
@@ -284,14 +176,92 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="<?=base_url()?>assets/web/lib/wow/wow.min.js"></script>
+    <script src="<?=base_url()?>assets/web/lib/easing/easing.min.js"></script>
+    <script src="<?=base_url()?>assets/web/lib/waypoints/waypoints.min.js"></script>
+    <script src="<?=base_url()?>assets/web/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="<?=base_url()?>assets/web/lib/parallax/parallax.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="<?=base_url()?>assets/web/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.getJSON("<?=base_url()?>assets/maps/resto_list/resto_points.geojson", function(data) {
+                var container = $('#restaurant-list');
+                var delay = 0.1;
+
+                // Loop every features in the geojson
+                data.features.forEach(function(feature, index){
+                    var props = feature.properties;
+                    var rating = props.rating || 'N/A';
+                    //clean rating format
+                    if (rating !== 'N/A' && typeof rating === 'string') {
+                        rating = rating.replace(',', '.');
+                    }
+
+                    //Count rating's progress bar
+                    var ratingNum = parseFloat(rating) || 0;
+                    var progressPercent = (ratingNum / 5.0) * 100;
+
+                    //Format picture file's name (suitable used one in map)
+                    var imageName = props.name.replace(/\s+/g, '_');
+                    var imagePath = "<?=base_url()?>assets/images/restaurant/"+imageName+".jpg";
+                    var fallbackImage = "<?=base_url()?>assets/web/img/food-icon.png";
+
+                    //Create card HTML
+                    var cardHtml = `
+                        <div class="col-lg-4 col-md-6 mb-5 wow fadeInUp" data-wow-delay="${delay}s">
+                            <div class="causes-item d-flex flex-column bg-light border-top border-5 border-primary rounded-top overflow-hidden h-100">
+                                <div class="text-center p-4 pt-0">
+                                    <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
+                                        <small>⭐ ${rating}</small>
+                                    </div>
+                                    <h5 class="mb-3">${props.name || 'Restoran'}</h5>
+                                    <p class="mb-2" style="font-size: 0.9rem; color: #666;">${props.address || 'Alamat tidak tersedia'}</p>
+                                    <div class="causes-progress bg-white p-3 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="text-dark"><i class="fa fa-phone me-1"></i> <small class="text-body">${props.phone || 'Tidak tersedia'}</small></p>
+                                            <p class="text-dark"><i class="fa fa-star me-1"></i> <small class="text-body">Rating</small></p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: ${progressPercent}%" aria-valuenow="${ratingNum}" aria-valuemin="0" aria-valuemax="5">
+                                                <span>${rating}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative mt-auto" style="height: 250px; overflow: hidden;">
+                                    <img class="img-fluid" src="${imagePath}" alt="${props.name}" 
+                                        style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                                        onerror="this.src='${fallbackImage}'">
+                                    <div class="causes-overlay">
+                                        <a class="btn btn-outline-primary" href="tel:${props.phone || ''}">
+                                            Hubungi
+                                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+
+                    //add card HTML to container
+                    container.append(cardHtml);
+
+                    //increment delay for animation
+                    delay += 0.1;
+                });
+                if (typeof WOW !== 'undefined') {
+                    new WOW().init();
+                }
+            }).fail(function(jqxhr, textStatus, error) {
+                console.error("(ERROR) Failed loading restaurant data: ", textStatus, error);
+                $('#restaurant-list').html('<div class="col-12 text-center"><p class="text-danger">Gagal memuat data restoran. Silakan refresh halaman.</p></div>');
+            });
+        });
+    </script>
 </body>
 
 </html>
