@@ -145,7 +145,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden" style="height: 275px;">
-                            <img class="img-fluid" src="<?=base_url()?>assets/web/img/albab.jpg" alt="">
+                            <img class="img-fluid" src="<?=base_url()?>assets/web/img/albab.png" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5>Muhammad Ulil Albab</h5>
